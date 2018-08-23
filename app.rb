@@ -13,6 +13,7 @@ class App < Sinatra::Base
 
   post '/checkout' do
     item = Item.new(params[:item])
+    erb :cart
   end
 
 end
